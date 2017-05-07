@@ -20,7 +20,7 @@ namespace AwareGroup.IoTDroneDisplay.MissionControl.ViewModel
 {
     public class MainPageViewModel : ViewModelBase
     {
-        private const bool SimulateBroadcastService = true;
+        private const bool SimulateBroadcastService = false;
         private const string IoTRemoteClientUriFormatString = "iotview://connect/?IP={0}";
 
         private AppSettingsService _settings = new AppSettingsService();

@@ -144,7 +144,7 @@
                     <Button Style="{StaticResource ActionButtonStyle}" Content="RESET LOG" VerticalAlignment="Bottom" />
                 </StackPanel>-->
                 <Grid Margin="0">
-                    <Image Source="{Binding CurrentMission.MissionImage}" Margin="0,30,0,0" Width="370" Height="500" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                    <Image Source="{Binding CurrentMission.MissionImage}" Margin="0,40,0,40" MaxWidth="360" MaxHeight="450" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Uniform"/>
                 </Grid>
             </Grid>
         </Grid>
