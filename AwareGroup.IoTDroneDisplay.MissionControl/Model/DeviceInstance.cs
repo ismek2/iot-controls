@@ -47,6 +47,13 @@ namespace AwareGroup.IoTDroneDisplay.MissionControl.Model
             }
         }
 
+        private PasswordCredential credential;
+        public PasswordCredential Credential
+        {
+            get { return this.credential; }
+            set { this.credential = value; }
+        }
+
         public override string ToString()
         {
             if (this.Name.Length > 0 && this.IpAddress.Length > 0)
