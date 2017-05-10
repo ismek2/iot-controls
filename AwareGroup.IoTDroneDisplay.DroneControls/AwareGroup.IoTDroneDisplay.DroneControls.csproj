@@ -132,6 +132,7 @@
       <DependentUpon>TitlePanelControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\DroneState.cs" />
+    <Compile Include="Model\VehicleType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\AwareGroup.IotDroneDisplay.DroneControls.rd.xml" />
   </ItemGroup>
@@ -179,6 +180,7 @@
     <Content Include="Assets\Battery-80.png" />
     <Content Include="Assets\Drone.png" />
     <Content Include="Assets\focal_point.png" />
+    <Content Include="Assets\Rover.png" />
     <Content Include="Assets\video_crosshair_glow.png" />
     <Content Include="Assets\video_crosshair.png" />
     <Content Include="Assets\gauge_background.png" />

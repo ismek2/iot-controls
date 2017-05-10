@@ -3,21 +3,21 @@
     "Id": "1",
     "PassthroughId": "1",
     "Title": "MISSION 1",
-    "Summary": "Find the Red Ball",
-    "Description": "Mission 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "Summary": "Find the Black Bear",
+    "Description": "I have many animals on my farm. I live in an area where there is a frequent problem with black bears. I need to find where the bears are roaming so I can ensure my crops and animals are safe."
   },
   {
     "Id": "2",
     "PassthroughId": "2",
     "Title": "MISSION 2",
-    "Summary": "Find the Blue Ball",
-    "Description": "Mission 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "Summary": "Search & Rescue",
+    "Description": "A mayday call has gone out from a nearby vessel. Rescuers launch a drone to provide wider search coverage when arriving on the scene. Where are the life boats? "
   },
   {
     "Id": "3",
     "PassthroughId": "3",
     "Title": "MISSION 3",
-    "Summary": "Find All the Balls",
-    "Description": "Mission 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "Summary": "Find the Fire Engine",
+    "Description": "Campus security has called emergency services. Trucks have been dispatched. Security needs to send a team to meet the trucks and wants to know from which direction they are approaching. Find the inbound emergency vehicles."
   }
 ]

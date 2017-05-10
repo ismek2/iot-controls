@@ -7,12 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="using:AwareGroup.IoTDroneDisplay.MissionControl.Controls"
     xmlns:viewModel="using:AwareGroup.IoTDroneDisplay.MissionControl.ViewModel"
-    mc:Ignorable="d" d:DesignWidth="1080" d:DesignHeight="1110">
+    mc:Ignorable="d" d:DesignWidth="960" d:DesignHeight="1080">
     <Page.DataContext>
         <viewModel:MainPageViewModel/>
     </Page.DataContext>
     <Grid Background="{StaticResource PanelBackgroundExtraDark}">
-        <Grid x:Name="HostGrid" Background="{StaticResource PanelBackgroundExtraDark}" >
+        <Viewbox>
+            <Grid x:Name="HostGrid" Background="{StaticResource PanelBackgroundExtraDark}" Width="960" Height="1080" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="430"/>
@@ -126,7 +127,7 @@
                     <TextBlock Text="{Binding CurrentMission.Summary}" Style="{StaticResource MissionHeaderText}" Grid.Row="1"/>
                     <Rectangle Fill="{StaticResource TextColorExtraDark}" Height="4"  Grid.Row="2" VerticalAlignment="Top" Margin="0,12,0,0"/>
                     <TextBlock Text="{Binding CurrentMission.Description}" 
-                            Style="{StaticResource MissionDescriptionText}" Grid.Row="3" TextWrapping="WrapWholeWords"/>
+                            Style="{StaticResource MissionDescriptionText}" Grid.Row="3" TextWrapping="WrapWholeWords" FontSize="24"/>
                     <Rectangle Fill="{StaticResource TextColorExtraDark}" Height="4"  Grid.Row="3" VerticalAlignment="Bottom" Margin="0,0,0,0"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,0" Grid.Row="4" Visibility="{Binding ShowMissionControls, Converter={StaticResource VisibilityConverter}}">
                         <Button Style="{StaticResource ActionButtonStyle}" Command="{Binding StartMissionCommand}" Content="START MISSION" VerticalAlignment="Bottom" Margin="0,15,20,0"/>
@@ -144,10 +145,11 @@
                     <Button Style="{StaticResource ActionButtonStyle}" Content="RESET LOG" VerticalAlignment="Bottom" />
                 </StackPanel>-->
                 <Grid Margin="0">
-                    <Image Source="{Binding CurrentMission.MissionImage}" Margin="0,40,0,40" MaxWidth="360" MaxHeight="450" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Uniform"/>
+                    <Image Source="Images/mission1.png" Margin="0,40,0,40" MaxWidth="360" MaxHeight="450" VerticalAlignment="Center" HorizontalAlignment="Center" Stretch="Uniform"/>
                 </Grid>
             </Grid>
         </Grid>
+        </Viewbox>
         <!--</Viewbox>-->
     </Grid>
 </Page>
