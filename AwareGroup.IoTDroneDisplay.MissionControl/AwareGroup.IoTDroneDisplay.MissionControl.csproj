@@ -170,6 +170,7 @@
     <Content Include="Images\icon_location_reflection.png" />
     <Content Include="Images\icon_target.png" />
     <Content Include="Images\icon_target_reflection.png" />
+    <Content Include="Images\Mission1.png" />
     <Content Include="Images\mission1pic.png" />
     <Content Include="Images\shadow.png" />
     <Content Include="Missions\Images\Icon1.png" />

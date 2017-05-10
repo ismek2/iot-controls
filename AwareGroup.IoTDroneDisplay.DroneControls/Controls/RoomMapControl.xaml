@@ -15,7 +15,11 @@
         <Viewbox>
             <Grid Width="240" Height="340" Background="{StaticResource PanelBackgroundOverlay}">
                 <Grid x:Name="DroneGrid" Width="200" Height="300">
-                    <Image Source="..\Assets\Drone.png" Width="40" Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="47*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="VehicleImage" Source="..\Assets\Drone.png" Width="40" HorizontalAlignment="Left" Margin="0,0,0,240" Grid.RowSpan="2" >
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform x:Name="ScaleDrone" CenterX="20" CenterY="40" ScaleX="1" ScaleY="1"></ScaleTransform>

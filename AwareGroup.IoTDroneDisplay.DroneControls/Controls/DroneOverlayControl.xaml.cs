@@ -321,8 +321,38 @@ namespace AwareGroup.IoTDroneDisplay.DroneControls.Controls
             {
                 string msg = ex.Message;
             }
-        }   
-        
+        }
+
+
+
+        public static readonly DependencyProperty VehicleProperty = DependencyProperty.Register(
+          "Vehicle", typeof(VehicleType), typeof(DroneOverlayControl), new PropertyMetadata(VehicleType.Drone, VehiclePropertyChangedCallback));
+
+        /// <summary>
+        /// Image Type to display for the Vehicle
+        /// </summary>
+        public VehicleType Vehicle
+        {
+            get { return (VehicleType)GetValue(VehicleProperty); }
+            set { SetValue(VehicleProperty, value); }
+        }
+
+        private static void VehiclePropertyChangedCallback(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs dependencyPropertyChangedEventArgs)
+        {
+            try
+            {
+                var ctl = (DroneOverlayControl)dependencyObject;
+                VehicleType val = (VehicleType)dependencyPropertyChangedEventArgs.NewValue;
+                ctl.DroneRoomMap.Vehicle =val;
+
+            }
+            catch (Exception ex)
+            {
+                string msg = ex.Message;
+            }
+        }
+
+
 
 
     }
